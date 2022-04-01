@@ -1,18 +1,18 @@
 # PasswordAudit-NICE
 
 Pretty Safe Electronics  AD and Webapp password audit
-[NICE portal preview[(https://portal.nice-challenge.com/curator/challenges?work_role=&specialty_area=23&environment=2&os=&category=&challenge_type=&ksa_id=&ksa_desc=&task_id=&task_desc=&ku_desc=&title=&scenario=&submit=Search#68/1)
+[NICE portal preview](https://portal.nice-challenge.com/curator/challenges?work_role=&specialty_area=23&environment=2&os=&category=&challenge_type=&ksa_id=&ksa_desc=&task_id=&task_desc=&ku_desc=&title=&scenario=&submit=Search#68/1)
 
 # Lab #1: Notes for Windows (AD) process
 
-#### ON the security box  (playerone/password123)
+#### On the security desk  (playerone/password123)
 ```
 find / -name mimikatz
 cd /usr/share/windows-resources/mimikatz
 # control panel / system and security / system to determine x64/i86
 scp /usr/share/windows-resources/mimikatz/x64/* playone@172.16.30.55:.
 ```
-#### ON domain controller
+#### On domain controller
 ```
 .\mimikatz.exe
 log a.log
@@ -20,7 +20,7 @@ lsadump::dcsync /domain:prettysafeelectronics.io /all /csv
 exit
 ```
 
-#### Back on the security box
+#### Back on the security desk
 ```
 scp playerone@172.16.30.55:a.log .
 # edit down to just the hashes
@@ -37,7 +37,7 @@ set users to force password change on next login
 
 # Lab #2: Notes for Webapp (Joomla) process
 
-#### ON the security box  (playerone/password123)
+#### On the security desk  (playerone/password123)
 WORK FROM Security Desk for scrolling terminal window cut/paste
 
 ```
