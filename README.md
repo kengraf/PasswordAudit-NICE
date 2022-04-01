@@ -35,6 +35,7 @@ more .john/john.pot
 Admin tools / active directory users and computers
 set users to force password change on next login
 
+![Result image](AD-result.png))
 # Lab #2: Notes for Webapp (Joomla) process
 
 #### On the security desk  (playerone/password123)
@@ -68,4 +69,5 @@ grep 'adff\|e807' b.log
 ```
 update pretty_users set requireReset=1 where id=734 or id=740;
 ```
+![Result image](Webapp-result.png))
 
